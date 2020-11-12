@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/rodents.css">
+    <title>Rodents</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href = "birds.html">Birds</a>
+            <a href = "cats.html">Cats</a>
+            <a href = "dogs.html">Dogs</a>
+            <a href = "terrarium.html">Terrarium</a>
+            <a href = "aboutus.html">About us</a>
+            <a href = "contacts.html">Contacts</a>
+        </header>
+        <main>
+            <h2>Happy pets</h2>
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <img src="../assets/rodents/r1.jpg">
+                    <div class="text">Lesly and Cagnie</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="../assets/rodents/r2.jpg">
+                    <div class="text">Steve</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="../assets/rodents/r3.jpg" >
+                    <div class="text">London</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="../assets/rodents/r4.jpg">
+                    <div class="text">Mayson and Jackson</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="../assets/rodents/r5.jpg">
+                    <div class="text">Mark</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="../assets/rodents/r6.jpg">
+                    <div class="text">Jade and Peach</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="../assets/rodents/r7.jpg">
+                    <div class="text">Nicky and Dave</div>
+                </div>
+
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+            </div>
+
+            <h2>Why rats are popular pets and homies?</h2>
+            <div class="rat-info">
+                Info about cool rats. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem nostrum deleniti nemo itaque sapiente atque? Delectus perspiciatis recusandae facere ex similique et illo atque enim, tempore quos maxime officiis. Quaerat voluptatum fugit, neque esse porro inventore odio consequuntur illum maiores recusandae earum facilis expedita veniam cupiditate qui, ipsa, architecto corporis explicabo dolorum voluptatem quasi omnis aspernatur molestiae laudantium? Fuga, quam.
+            </div>
+
+            <div class = "rat-goods">
+                <div class="food">
+                    <img src="../assets/rodents/food1.jpg">
+                    <p>food is delicious!</p>
+                </div>
+
+                <div class = "food">
+                    <img src="../assets/rodents/food2.jpg">
+                    <p>food is tasty!</p>
+                </div>
+
+                <div class = "food">
+                    <img src="../assets/rodents/food3.jpg">
+                    <p>food is gorgeous!</p>
+                </div>
+            </div>
+
+        </main>
+        <footer>
+        </footer>
+    </div>
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000);
+        }
+        </script>
+</body>
+</html>
